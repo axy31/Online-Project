@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Shafaat-PC
+ * @author AxY-PC
  */
 public class Dictionary extends HttpServlet {
 
@@ -40,7 +40,7 @@ public class Dictionary extends HttpServlet {
             try
             {  
                     Class.forName("com.mysql.jdbc.Driver");  
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/dictionary","root","");  
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/dictionary","root","Iamsherlocked@1");  
                     Statement stmt=con.createStatement();  
                     ResultSet rs=stmt.executeQuery("select * from words where word=\""+var+"\"");  
                     if(rs.next())
@@ -48,9 +48,7 @@ public class Dictionary extends HttpServlet {
                         RequestDispatcher requestdispatcher=request.getRequestDispatcher("/Dictionary.html");    
                         requestdispatcher.include(request,response);
                         out.println("<br/><br/><center><h2>Word : "+rs.getString(1)+"<br>Meaning : "+rs.getString(2)+"</h2></center>");  
-                        
-                        
-                            
+                         
                     }
                     else
                     {
@@ -62,7 +60,7 @@ public class Dictionary extends HttpServlet {
                     
                 }catch(Exception e)
                 {
-                    out.println(e+"ggggg");
+                    out.println(e+" ");
                 }
         }
     }

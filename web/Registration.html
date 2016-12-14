@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registration</title>
+        <link type="text/css" rel="stylesheet" href="registration.css">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--<link rel="stylesheet" type="text/css" href="Calculator.css" />-->
+    </head>
+    <body>
+        <form method="post" action="">
+            <center>
+            <table>
+                <caption><div><h1>Registration Form</h1></div></caption>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="Enter First Name" name="Fnm"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Enter Last Name" name="Lnm"></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td>
+                        <input type="date" name="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="f">Female
+                        <input type="radio" name="m">Male
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification</td>
+                    <td>
+                        <select>
+                            <option value="10">10TH</option>
+                            <option value="12">12TH</option>
+                            <option value="Graduation">Graduation</option>
+                            <option value="Post_Graduation">Post Graduation</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="emailid" placeholder="abc@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>
+                        <input type="tel" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        Country <select name="country">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="France">France</option>
+                        </select>
+                        <br/>
+                        
+                        State <select name="state">
+                            <option value="Maharshtra">Maharashtra</option>
+                            <option value="Andhra_Pradesh">Andhra_Pradesh</option>
+                            <option value="Up">UP</option>
+                        </select>
+                           <br/>
+                        City <select name="city">
+                            <option value="Thane">Thane</option>
+                            <option value="Kalyan">Kalyan</option>
+                            <option value="Kanpur">Kanpur</option>
+                             <option value="Vizag">Vizag</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" name="usnm"></td>
+                        
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="cpwd"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+                </center>
+        </form>
+    </body>
+</html>
